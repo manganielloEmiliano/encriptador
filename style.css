@@ -1,0 +1,121 @@
+
+* , *:before, *:after{
+    box-sizing:inherit;
+
+}
+
+html{
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    
+    background-color: #F3F5FC;
+    font-family: Verdana;
+    display: flex;
+    flex-direction: row;
+    
+}   
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    text-align: start;
+    font-size: 15px;
+    height: 10%;
+    flex: 1 1 50%;
+    
+}
+#logo{
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
+article{
+    background-color: #F3F5FC;
+    padding: 20px;
+    width: 70%;
+    height: 90%;
+    
+    
+    
+}
+main article textarea{
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    border:none;
+    font-size: 30px;
+ 
+}
+main article button{
+    width: 40%;
+    padding: 24px;
+    gap: 8px;
+    margin: 4%;
+    height: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15%;
+    
+}
+main article button:hover{
+    font-size: 33px;
+    background-color: darkblue;
+    color: white;
+    transition: 15ms;
+}
+
+@media (max-with:700px) {
+    article {
+        flex-basis: 100%;
+    }
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F5FC;
+    padding: 20px;
+    color: white;
+    height: 90%;
+    flex: 1 1 30%;
+}
+aside textarea{
+    text-align: center;
+    border-radius: 2%;
+    font-size: 24px;
+    
+    height: 90%;
+    
+}
+aside button {
+    height: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15%;
+    transition: 15ms;
+    
+}
+
+aside button:hover {
+    font-size: 33px;
+    background-color: darkblue;
+    color: white;
+}
